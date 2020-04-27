@@ -25,6 +25,7 @@ while true; do
                 sudo umount ~/tmpmount;
 				echo "Copy the above grub menu entry in grub customizer";
                 sudo grub-customizer;
+		rm -f multi_installer.sh;
                 break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
@@ -32,4 +33,5 @@ while true; do
 done
 else
     echo "You are Offline. Please connect to the internet before running installation"
+    rm -f multi_installer.sh
 fi
