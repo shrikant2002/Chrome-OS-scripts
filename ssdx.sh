@@ -23,7 +23,7 @@ while true; do
         [Yy]* ) echo "Ok, Proceeding installation on $partition";
                 mkdir -p ~/tmpmount;
                 sudo mount /dev/$partition ~/tmpmount;
-                sudo bash chromeos-install.sh -l -src rammus_recovery.bin -dst ~/tmpmount/chromos.img -s $size;
+                sudo bash chromeos-install.sh -src rammus_recovery.bin -dst ~/tmpmount/chromos.img -s $size;
                 sudo umount ~/tmpmount;
 				echo "Copy the above grub menu entry in grub customizer";
                 sudo grub-customizer;
