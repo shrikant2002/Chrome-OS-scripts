@@ -6,8 +6,7 @@ if [ $? -eq 0 ]; then
     sudo apt-get install pv
     sudo apt-get install cgpt
     sudo figlet -c "SUBSCRIBE TO"
-    sudo figlet -c "How To"
-    sudo figlet -c "Guys"
+    sudo figlet -c "How To Guys"
     sudo echo https://www.youtube.com/c/HowToGuys
     sudo bash chromeos-install.sh -src rammus_recovery.bin -dst /dev/sda
 else
